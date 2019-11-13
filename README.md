@@ -43,6 +43,10 @@ $(SRCROOT)/../node_modules/react-native-umeng-analytics/ios/common_ios_1.4.2/nor
 
 在`MainApplication`中添加
 ```
+    import com.example.umenganaticlys.UmengAnalyticsPackage;
+    import com.umeng.analytics.MobclickAgent;
+    import com.umeng.commonsdk.UMConfigure;
+    
     @Override
     public void onCreate() {
         super.onCreate();
@@ -53,6 +57,8 @@ $(SRCROOT)/../node_modules/react-native-umeng-analytics/ios/common_ios_1.4.2/nor
 
 在`MainActivity.java`中添加
 ```
+    import com.umeng.analytics.MobclickAgent;
+    
     @Override
     public void onResume() {
         super.onResume();
